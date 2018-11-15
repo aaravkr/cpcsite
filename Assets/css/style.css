@@ -1,0 +1,411 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block
+}
+
+ol,
+ul {
+    list-style: none
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box
+}
+
+html {
+    margin-top: 0 !important
+}
+
+body {
+    font-family: 'Gadugi';
+    font-style: normal;
+    font-weight: 300;
+    position: relative;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    overflow-x: hidden;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+ @font-face {
+            font-family: Gadugi;
+            src: url(.gadugi.ttf);
+        }
+
+  @font-face {
+            font-family: OswaldLight;
+            src: url(./Oswald-Light.ttf);
+        }
+@font-face {
+            font-family: OswaldBold;
+            src: url(./Oswald-Bold.ttf);
+        }
+@font-face {
+            font-family: BabesNeueBold;
+            src: url(./BebasNeueBold.ttf);
+        }
+@font-face {
+            font-family: OswaldMedium;
+            src: url(./Oswald-Medium.ttf);
+        }
+.pd_rg{
+    padding-right: 0px !important;
+}
+.pd_lf{
+    padding-left: 0px !important;
+}
+
+/* navbar */
+
+ header {
+            border-bottom: 1px solid lightgray;
+            margin-bottom: 10px;
+        }
+
+        header ul {
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: space-around;
+            cursor: pointer;
+            margin: 0px 50px;
+        }
+
+        header ul li {
+            list-style-type: none;
+            padding: 5px;
+            justify-content: center;
+            align-self: center;
+            font-family: Gadugi;
+            font-size: 15px;
+            color: gray;
+        }
+
+        .firstli {
+            flex-grow: 0.5;
+        }
+
+
+
+        .sevenli {
+            flex-grow: 0;
+            border: 1px solid white;
+            font-size: 24px;
+            padding: 6px 10px;
+            background-color: #017eb4;
+            color: white;
+        }
+
+       
+
+        .sect1 {
+            height: 80vh;
+            width: 100%;
+            margin-bottom: 30px;
+           
+        }
+
+        .sect1div {
+            background-image: url(../img/Picture1home.jpg);
+            background-position: center;
+            background-repeat: no-repeat;
+            height: 100%;
+            width: 100%;
+           
+
+        }
+
+/*
+        .sect1divinner {
+            font-family: Bebasbold;
+            font-weight: 500;
+            
+            border: 2px solid blue;
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: flex-start;
+            flex-wrap: row wrap;
+            margin: 100px 200px;
+        }
+
+        .sect1divinner ul li {
+            list-style-type: none;
+            border: 2px solid yellow;
+            align-self: center;
+            color: white;
+
+        }
+*/
+
+.sect1_div_inner{
+    position: relative;
+    top: 137px;
+    left: 215px;   
+}
+
+.headline01{
+    font-size: 66px;
+    text-transform: uppercase;
+    font-family: BabesNeueBold;
+    color: white;
+    width: 50%;
+    font-weight: 800;
+    line-height: 0.7;
+   
+}
+.headline02{
+    font-size: 90px;
+    text-transform: uppercase;
+    font-family: BabesNeueBold;
+    color: white;
+    font-weight: 800;
+    line-height: 1;
+}
+.headline03{
+    font-size: 42px;
+    text-transform: uppercase;
+    font-family: OswaldLight;
+    color: white;
+    line-height: 0.8;
+}
+.headline04{
+    font-family: OswaldBold;
+    margin-top: 10px;
+    background-color: #017eb4;
+    color: white;
+    font-size: 21px;
+    border-radius: 21px;
+    width: 20%;
+    text-align: center;
+    text-transform: uppercase;
+    margin-top: 30px;
+    margin-left: 30px;
+    cursor: pointer;
+}
+     
+.about{
+    margin: 0px 76px;
+    width: auto;
+    height: auto;
+    margin-bottom: 30px;
+}
+
+.about_left{
+    background-color: lightgray;
+    color: #017eb4;
+    height: 80vh;
+}
+.about_heading{
+    margin-top: 20px;
+    font-size: 46px;
+    text-align: center;
+    font-family: OswaldMedium;
+    text-transform: uppercase;
+}
+
+.about_content{
+    font-family: Gadugi;
+    font-size: 18px;
+    padding: 20px 50px 70px 70px;
+    line-height: 1.3;
+}
+
+.about_right{
+    padding: 0px !important;
+    height: 80vh;
+    
+}
+.about_rigt_box01{
+    height: 50%;
+    background-color:#017eb4;
+    padding: 40px 50px 50px 20px;
+    color: white;
+    width: 100%;
+    
+    
+}
+.box01_heading{
+    font-size: 25px;
+    font-family: OswaldLight;
+    text-transform: uppercase;
+    line-height: 1.2;
+    margin-bottom: 15px;
+    
+}
+.large_font_42{
+    font-size: 42px;
+}
+.sub_heading_font_30{
+    font-size: 30px;
+}
+.about_boxes{
+    height: 50%;
+    font-family: OswaldMedium;
+    color: white;
+    font-size: 46px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+}
+.about_rigt_box02{
+    background-image: url(../img/box%202.jpg);
+}
+.about_rigt_box03{
+    background-image: url(../img/box%201.jpg);   
+}
+.about_rigt_box04{
+    background-image: url(../img/box%203.jpg);
+}
+.flex_center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Why_section{
+    height: 80vh;
+    margin: 10px 70px;
+}
+.why_box01{
+    background-color: #017eb4;
+    padding: 20px 100px;
+}
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 1050px) {
+
+      
+     header ul {
+            margin: 0px 30px;
+        }
+    .firstli {
+            flex-grow: 0.2;
+        }
+    .firstli img{
+        width: 80%;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
