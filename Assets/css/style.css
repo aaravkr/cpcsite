@@ -127,11 +127,16 @@ body {
     overflow-x: hidden;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+    line-height: 1;
 }
 
  @font-face {
             font-family: Gadugi;
             src: url(.gadugi.ttf);
+        }
+ @font-face {
+            font-family: GadugiBold;
+            src: url(.gadugib.ttf);
         }
 
   @font-face {
@@ -364,22 +369,84 @@ body {
 }
 
 .Why_section{
-    height: 80vh;
-    margin: 10px 70px;
+    height: 90vh;
+    margin: 10px 60px;
+    padding-right: 20px;
+    background: #004b6d;
 }
 .why_box01{
     background-color: #017eb4;
     padding: 20px 100px;
+    z-index: 999;
+    margin-top: 80px;
 }
 
+.font_content{
+    font-size: 28px;
+    font-family: OswaldBold;
+    color: white;
+    text-transform: uppercase;
+    
+}
+.lh-1{
+line-height: 1;
+}
 
+.mg_btm_10{
+    margin-bottom: 10px;
+}
+.btm-border{
+    border-bottom: 2px solid white;
+}
 
+.why_heading{
+    line-height: 1;
+    margin-bottom: 30px;
+}
+.why_heading_01{
+    font-size: 18px;
+    font-family: OswaldBold;
+    color: white;
+    text-transform: uppercase; 
+}
+.Why_top_heading{
+    font-family: OswaldBold;
+    font-size: 45px;
+    color: white;
+    text-transform: uppercase;
+    margin-top: 20px;
+}
+.why_box{
+    height: 70%;
+}
 
+.why_box_heading{
+    font-size: 30px;
+    color: white;
+    border-left: 2px solid #017eb4;
+    padding-left: 15px;
+    font-family: OswaldBold;
+    margin-bottom: 5px;
+    text-transform: uppercase;
+}
+.why_image_content_box{
+border: 1px solid white;
+    height: 90%;
+}
 
-
-
-
-
+.why_box_img img{
+  width: 100%;  
+}
+.why_box_para{
+    font-size: 16px;
+    padding: 8px;
+    line-height: 1.3;
+    color: white;
+}
+.why_box_02,.why_box_03{
+    margin-top: 140px;
+    
+}
 
 
 @media only screen and (max-width: 1050px) {
