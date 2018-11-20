@@ -108,14 +108,19 @@ ul {
 *,
 *:before,
 *:after {
-    box-sizing: border-box
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box
 }
 
 html {
-    margin-top: 0 !important
+    width: 100%;
+    height: 100% !important;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden;
 }
-
 body {
+    height: 100% !important;
     font-family: 'Gadugi';
     font-style: normal;
     font-weight: 300;
@@ -164,103 +169,71 @@ body {
 
 /* navbar */
 
- header {
-            border-bottom: 1px solid lightgray;
-            margin-bottom: 10px;
+    .navbar{
+        padding: 0px 70px !important;
+        font-family: Gadugi !important;
+        font-size: 15px !important;
+        border-bottom: 1px solid grey;
+    }
+     .navbar-brand img{
+         max-width: 100%; 
+         width: 330px;
         }
 
-        header ul {
-            display: flex;
-            flex-flow: row wrap;
-            justify-content: space-around;
-            cursor: pointer;
-            margin: 0px 50px;
-        }
+    .login{
+        margin-left: 20px;
+        color: white !important;
+        background-color: #017eb4;
+    }
 
-        header ul li {
-            list-style-type: none;
-            padding: 5px;
+
+
+.home{
+    width: 100%;
+    border: 1px solid blue;
+     /* The image used */
+    background-image: url("../img/Picture1home.jpg");
+    /* Full height */
+    height:90%;
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+     display: flex;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+}
+    
+.home_content{
+    height: auto;
+    display: flex;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
             justify-content: center;
-            align-self: center;
-            font-family: Gadugi;
-            font-size: 15px;
-            color: gray;
-        }
-
-        .firstli {
-            flex-grow: 0.5;
-        }
-
-
-
-        .sevenli {
-            flex-grow: 0;
-            border: 1px solid white;
-            font-size: 24px;
-            padding: 6px 10px;
-            background-color: #017eb4;
-            color: white;
-        }
-
-       
-
-        .sect1 {
-            height: 80vh;
-            width: 100%;
-            margin-bottom: 30px;
-           
-        }
-
-        .sect1div {
-            background-image: url(../img/Picture1home.jpg);
-            background-position: center;
-            background-repeat: no-repeat;
-            height: 100%;
-            width: 100%;
-           
-
-        }
-
-/*
-        .sect1divinner {
-            font-family: Bebasbold;
-            font-weight: 500;
-            
-            border: 2px solid blue;
-            display: flex;
-            flex-flow: row wrap;
-            justify-content: flex-start;
-            flex-wrap: row wrap;
-            margin: 100px 200px;
-        }
-
-        .sect1divinner ul li {
-            list-style-type: none;
-            border: 2px solid yellow;
-            align-self: center;
-            color: white;
-
-        }
-*/
-
-.sect1_div_inner{
-    position: relative;
-    top: 137px;
-    left: 215px;   
+    padding-left:180px; 
 }
 
+
+
+
 .headline01{
-    font-size: 66px;
+    font-size: 90px;
     text-transform: uppercase;
     font-family: BabesNeueBold;
     color: white;
-    width: 50%;
     font-weight: 800;
     line-height: 0.7;
    
 }
 .headline02{
-    font-size: 90px;
+    font-size:85px ;
     text-transform: uppercase;
     font-family: BabesNeueBold;
     color: white;
@@ -268,7 +241,7 @@ body {
     line-height: 1;
 }
 .headline03{
-    font-size: 42px;
+    font-size: 50px;
     text-transform: uppercase;
     font-family: OswaldLight;
     color: white;
@@ -276,30 +249,28 @@ body {
 }
 .headline04{
     font-family: OswaldBold;
-    margin-top: 10px;
     background-color: #017eb4;
     color: white;
     font-size: 21px;
     border-radius: 21px;
     width: 20%;
-    text-align: center;
     text-transform: uppercase;
-    margin-top: 30px;
-    margin-left: 30px;
     cursor: pointer;
 }
+
+
+
      
 .about{
-    margin: 0px 76px;
+    margin: 0px 76px 0px 76px;
     width: auto;
     height: auto;
-    margin-bottom: 30px;
 }
 
 .about_left{
     background-color: lightgray;
     color: #017eb4;
-    height: 80vh;
+    height: auto;
 }
 .about_heading{
     margin-top: 20px;
@@ -314,6 +285,7 @@ body {
     font-size: 18px;
     padding: 20px 50px 70px 70px;
     line-height: 1.3;
+    text-align: justify;
 }
 
 .about_right{
@@ -326,9 +298,7 @@ body {
     background-color:#017eb4;
     padding: 40px 50px 50px 20px;
     color: white;
-    width: 100%;
-    
-    
+    width: 100%;   
 }
 .box01_heading{
     font-size: 25px;
@@ -363,13 +333,19 @@ body {
     background-image: url(../img/box%203.jpg);
 }
 .flex_center{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
 }
 
 .Why_section{
-    height: 90vh;
+ height: 90vh;
     margin: 10px 60px;
     padding-right: 20px;
     background: #004b6d;
@@ -449,26 +425,223 @@ border: 1px solid white;
 }
 
 
-@media only screen and (max-width: 1050px) {
 
-      
-     header ul {
-            margin: 0px 30px;
+
+
+
+
+
+
+/* media query starts here */
+    
+    @media (max-width: 767px){
+        .navbar-brand img{
+            width: 270px;
+            height: 50px; 
         }
-    .firstli {
-            flex-grow: 0.2;
+        
+    .login{ 
+        display: none !important;
         }
-    .firstli img{
-        width: 80%;
-    }
+        
+        .navbar{
+            padding-left: 10px !important;
+            padding-right: 10px !important;
+        }
+        
 }
 
 
 
+@media (max-width: 576px) {
+
+.home_content{
+    padding: 0px !important;
+     width: 100%;
+}
+
+.headline01{
+    width: 100%;
+    text-align: center;
+    font-size: 50px;
+    line-height: 1;
+}
+.headline02{
+    width: 100%;
+     text-align: center;
+    font-size:60px;
+    line-height: 1.1;
+}
+.headline03{
+    width: 100%;
+     text-align: center;
+    font-size: 32px;
+    line-height: 1;
+}
+    
+ .about{
+    margin: 0px;
+   
+}
+.about_heading{
+    margin-top: 10px;
+    font-size: 35px;
+}
+
+.about_content{
+    font-family: Gadugi;
+    font-size: 18px;
+    padding: 10px 30px 50px 20px;
+    line-height: 1.3;
+    text-align: left;
+}
+ .about_right{
+    height: auto;  
+}
+.about_rigt_box01{
+    height: 320px;
+    padding: 85px 10px 5px 30px;  
+}
+.box01_heading{
+    font-size: 35px;
+    line-height: 1.2;    
+}
+.large_font_42{
+    font-size: 55px;
+}
+.sub_heading_font_30{
+    font-size: 30px;
+}
+.about_boxes{
+    height: 320px;
+}   
+    
+.Why_section{
+    height: auto;
+    margin:0px;
+    padding-left:10px;
+    padding-right: 10px;
+    background: #004b6d;
+}
+.why_box01{
+    background-color: #017eb4;
+    padding: 20px 100px;
+    z-index: 999;
+    margin: 50px 50px 0px 50px;
+    
+}
+
+.font_content{
+    font-size: 28px;
+    
+}
+
+.mg_btm_10{
+    margin-bottom: 10px;
+}
+
+.why_heading{
+    line-height: 1;
+    margin-bottom: 30px;
+}
+.Why_top_heading{
+    text-align: center;
+    font-size: 30px;
+    margin-top: 40px;
+    margin-bottom: -20px;
+}
+.why_box{
+    height: auto;
+}
+
+.why_box_heading{
+    font-size: 30px;
+}
+.why_image_content_box{
+border: 1px solid white;
+    height: 90%;
+}
+
+.why_box_img img{
+  width: 100%;  
+}
+.why_box_para{
+    font-size: 14px;
+    padding: 8px;
+    line-height: 1.3;
+    color: white;
+}
+.why_box_02,.why_box_03{
+    margin-top: 30px;
+    
+}
+    .why_box_03{
+        margin-bottom: 20px;
+    }
 
 
 
+}
 
+/* Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px) { 
+.home_content{
+    padding-left:50px; 
+}
+.about_heading{
+    margin-top: 10px;
+    font-size: 30px;
+}
+.about_content{
+    font-size: 16px;
+    padding: 10px 10px 10px 10px;
+}
+ .about_rigt_box01{
+    padding: 15px 10px 5px 30px;  
+}
+.box01_heading{
+    font-size: 35px;
+    line-height: 1.2;    
+}
+.large_font_42{
+    font-size: 25px;
+}
+.sub_heading_font_30{
+    font-size: 20px;
+} 
+}
+
+/* Large devices (desktops, 992px and up)*/
+@media (min-width: 992px) { 
+.home_content{
+    padding-left:180px ; 
+}
+
+}
+
+/* Extra large devices (large desktops, 1200px and up)*/
+@media (min-width: 1200px) { 
+    
+    .about_heading{
+    margin-top: 10px;
+    font-size: 50px;
+}
+.about_content{
+    font-size: 20px;
+    padding: 10px 10px 10px 10px;
+    line-height: 1.3;
+}
+.large_font_42{
+    font-size: 45px;
+}
+.sub_heading_font_30{
+    font-size: 30px;
+} 
+
+
+}
+
+/* end of homepage  media query*/
 
 
 

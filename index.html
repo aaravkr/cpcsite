@@ -14,48 +14,60 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
-
+    <link rel="stylesheet" href="Assets/css/normalize.css">
 
 </head>
 
 <body>
 
-    <header>
+    <nav class="navbar navbar-expand-lg navbar-light">
+  <a class="navbar-brand" href="#"><img src="Assets/img/Logo%20(1).png" class="img-responsive"></a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
 
-        <ul>
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="#">About <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Rewards
+        </a>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Get Involved
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Activity</a>
+      </li>
+         <li class="nav-item">
+        <a class="nav-link" href="#">News</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link login" href="#">Log In</a>
+      </li>
+      <li class="nav-item">
+          <a class="nav-link" href="#"> <i class="fa fa-search" aria-hidden="true"> </i> </a>
+      </li>
+    </ul>
+  </div>
+</nav>
 
-            <li class="firstli"><img src="/Assets/img/Logo.jpg"> </li>
-            <li>About</li>
-            <li>Rewards<span> <i class="fas fa-caret-down"></i></span> </li>
-            <li>Get involved <i class="fas fa-caret-down"></i></li>
-            <li>Activity</li>
-            <li>News</li>
-            <li class="sevenli">Log in</li>
-            <li class="eightli"> <i class="fa fa-search" aria-hidden="true"></i></li>
+<section class="home">
 
-        </ul>
-
-    </header>
-
-
-    <section class="sect1">
-
-        <div class="sect1div">
-            <div class="sect1_div_inner">
-            <div class="headline01">
-                The hightest of
-            </div>
-            <div class="headline02"> Distinctions</div>
-            <div class="headline03"> is serving to others</div>
-            <div class="headline04">
-                join the movement</div>
-            
-           
-            </div>
-        </div>
-
-
-    </section>
+    
+    <div class="home_content">
+        <div class="headline01">The Highest of </div>
+        <div class="headline02"> Distinctions</div>
+        <div class="headline03">Is Service to Other</div>
+    </div>
+</section>   
+    
+    
     <section class="about">
         <div class="row">
             <div class="col-md-5 about_left">
@@ -104,10 +116,12 @@
             </div>
         </div>
     </section>
+    
+    
     <section class="Why_section">
         
         <div class="row">
-            <div class="col-md-2  why_box01">
+            <div class="col-md-2 col-sm-6  why_box01">
                <div class="why_heading font_content">
                    <div style="font-family:Gadugi"> Engage with</div>
                    <div> Community </div>
@@ -115,16 +129,16 @@
                 <div class="Why_Content font_content btm-border mg_btm_10">
                     Outreach
                 </div>
-                <div class="Why_Content font_content btm-border lh-1 mg_btm_10">
+                <div class="Why_Content font_content btm-border lh-1">
                     <div> Capacity</div> 
-                    <div> Building</div>
+                    <div class="mg_btm_10"> Building</div>
                 </div>
                 <div class="Why_Content font_content btm-border mg_btm_10">
                     Collaboration
                 </div>
                 <div class="Why_Content font_content btm-border lh-1 mg_btm_10">
                      <div> Proactive</div> 
-                    <div> actions</div>
+                    <div class="mg_btm_10"> actions</div>
                      
                 </div>
                 <div class="Why_Content font_content btm-border">
@@ -132,7 +146,7 @@
                 </div>
                 
             </div>
-             <div class="col-md-3 offset-md-1">
+             <div class="col-md-3 col-sm-6 offset-md-1">
                <div class="Why_top_heading">
                    What You Get
                </div>
@@ -187,6 +201,7 @@
         </div>
     </section>
 
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
 
 </body>
